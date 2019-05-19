@@ -193,7 +193,7 @@ def buy_in(Chips):
 player_chips = Chips()
 
 while True:
-
+    playing = True
     deck = Deck()
     player1 = Hand()
     dealer = Hand()
@@ -236,7 +236,7 @@ while True:
             while dealer.value < 17:
                 hit(deck, dealer)
                 show_all(player1, dealer)
-                playing = False
+                
 
             print("You lose!!!!!")
         break
