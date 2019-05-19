@@ -272,8 +272,8 @@ while True:
         print("You have run out of chips\n")
         rebuy = input("Would you like to rebuy? [Y/N]: ")
         if rebuy == "Y":
-            buy_in(player_chips)
-            playing = True
+            continue
+            
         else:
             print("Thanks for playing!")
             break
